@@ -359,7 +359,8 @@ compiler_clean: compiler_moc_predefs_clean
 
 ####### Compile
 
-main.o: main.cpp 
+main.o: main.cpp gui.cpp \
+		gui.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
 ####### Install
